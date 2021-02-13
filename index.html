@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Advanced-CSS">
+    <meta name="author" content="Sandra Lazic">
+    <title>Responsive-Gallery</title>
+
+    <style>
+         body{
+           background-image: url(5.png);
+          
+             }
+        .container {
+            max-width: 960px;
+            width: 90%;
+            margin: 50px auto;
+            font-family: sans-serif;
+        
+        
+             }
+
+        .row {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            margin: 0 -20px;
+            line-height: 30px;
+           
+            }
+        .column {
+           
+            flex-basis: 20%;
+            box-sizing: border-box;
+            padding: 20px;
+            text-align: center;
+            
+           
+            }
+
+        .box {
+            height: 100px;
+            background-color: hsl(210deg 59% 64%);
+            background-image: url(placeholder-image.png);
+            background-position: center;
+            background-size: 140px;
+            background-repeat: no-repeat;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            box-shadow: 2px 0px 3px black;
+            
+            }
+        .box:hover {
+            background-color: grey;
+             }
+
+        @media screen and (max-width: 1024px) {
+            .column {
+                 flex-basis: 33.33%;
+                 }
+            }
+        @media screen and (max-width: 768px) {
+            .column {
+                flex-basis: 50%;
+                }
+            }
+        @media screen and (max-width: 414px) {
+            .column {
+                 flex-basis: 100%;
+                }
+            }
+
+    </style>
+
+</head>
+<body>
+   
+    <div class="container">
+        <h1>Gallery Heading</h1>
+        <div class="row">
+        <div class="column">
+        <a href="New folder/index.html"><div id="box1" class="box"></div></a>
+        Image Title</div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title</div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title</div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title </div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title</div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title </div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title</div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title</div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title</div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title</div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a lacinia nisi, nec tristique sem. Cras id tellus ac mauris posuere varius. Pellentesque vel mi justo. Aenean malesuada purus eu lacinia finibus. Praesent commodo euismod odio, eu pharetra nulla dignissim nec. Ut id nulla augue. Duis ultricies euismod purus, ut lobortis tortor semper a. Nam eleifend accumsan elit, in elementum lacus. Nunc varius imperdiet nisi, egit pretium augue molestie a. Nullam ut malesuada enim. Integer non velit fringilla, poerta ex vitae, porttitor velit. Ut luctus lacinia libero a scelerisque. Ut ullamcorpoer arcu at mauris ullamcorper tempor </p>
+    
+        </div>
+        
+</body>
+ <!--Sandra Lazic-->
+</html>
